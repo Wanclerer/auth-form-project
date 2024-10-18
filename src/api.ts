@@ -1,4 +1,3 @@
-// api.ts
 const API_URL = "https://shift-backend.onrender.com"; // Базовый URL вашего API
 
 // Функция для запроса создания OTP

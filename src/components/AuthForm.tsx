@@ -3,11 +3,11 @@ import { requestOtp, signIn } from "../api"; // Импортируем функ�
 import "./AuthForm.css"; // Импортируем стили
 
 const AuthForm: React.FC = () => {
-  const [phone, setPhone] = useState<string>("");
-  const [code, setCode] = useState<string>(""); // Переименовано для соответствия
-  const [error, setError] = useState<string>("");
-  const [success, setSuccess] = useState<string>("");
-  const [isOtpRequested, setIsOtpRequested] = useState<boolean>(false); // Статус отправки OTP
+  const [phone, setPhone] = useState(""); // TypeScript автоматически выводит тип string
+  const [code, setCode] = useState(""); // TypeScript автоматически выводит тип string
+  const [error, setError] = useState(""); // TypeScript автоматически выводит тип string
+  const [success, setSuccess] = useState(""); // TypeScript автоматически выводит тип string
+  const [isOtpRequested, setIsOtpRequested] = useState(false); // TypeScript выводит тип boolean
 
   // Валидация телефона
   const validatePhone = (value: string) => {
